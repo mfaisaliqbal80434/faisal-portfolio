@@ -1,0 +1,164 @@
+
+.about-section {
+  width: 100%;
+  padding: 100px 8%;
+  background: #0d0d0d;
+  color: #fff;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+.about-heading > p {
+  color: #d4af37;
+  letter-spacing: 4px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.about-heading h2 {
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.about-heading h2 span {
+  color: #d4af37;
+}
+
+.about-line {
+  width: 65px;
+  height: 3px;
+  background: #d4af37;
+  margin: 15px auto 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 65px;
+}
+
+.about-left {
+  flex: 1;
+  min-height: 350px;
+  background: linear-gradient(145deg, #191919, #0b0b0b);
+  border: 1px solid #333;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.about-left:hover {
+  border-color: #d4af37;
+  transform: translateY(-7px);
+}
+
+.about-icon {
+  color: #d4af37;
+  margin-bottom: 25px;
+}
+
+.about-left h3 {
+  font-size: 23px;
+  margin-bottom: 12px;
+}
+
+.about-left p {
+  color: #999;
+  line-height: 1.7;
+}
+
+.about-right {
+  flex: 1.4;
+}
+
+.about-right h3 {
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.about-right h4 {
+  color: #aaa;
+  font-size: 19px;
+  margin-bottom: 22px;
+}
+
+.about-right h4 span {
+  color: #d4af37;
+}
+
+.about-right > p {
+  color: #aaa;
+  font-size: 15px;
+  line-height: 1.9;
+  margin-bottom: 16px;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 30px;
+}
+
+.about-feature {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.about-feature svg {
+  color: #d4af37;
+  min-width: 24px;
+}
+
+.about-feature h5 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.about-feature p {
+  font-size: 12px;
+  color: #888;
+}
+
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-left,
+  .about-right {
+    width: 100%;
+  }
+
+  .about-left {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-section {
+    padding: 75px 6%;
+  }
+
+  .about-heading h2 {
+    font-size: 34px;
+  }
+
+  .about-right h3 {
+    font-size: 23px;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+}
